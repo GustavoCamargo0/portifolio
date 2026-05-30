@@ -1,5 +1,4 @@
 export default function TechStak() {
-
   const techStak = [
     {
       category: "Linguagens",
@@ -27,25 +26,63 @@ export default function TechStak() {
     },
     {
       category: "Testes",
-      tech: ["Cypress"]
+      tech: ["Cypress", "Selenium"]
     }
   ];
-  return (
-    <>
-      <h1 className="text-4xl">Tech Stak</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+  return (
+    <section className="space-y-8">
+      <div>
+        <h2 className="text-4xl font-black">
+          Minhas <span className="text-blue-400">Stacks</span>
+        </h2>
+
+        <p className="text-zinc-400 mt-2">
+          Tecnologias que utilizo para desenvolver aplicações web,
+          mobile e APIs.
+        </p>
+      </div>
+
+      <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         {techStak.map((item, index) => (
-          <div key={index} className="border rounded-xl p-5 shadow-md">
-            <h2 className="text-xl font-bold">{item.category}</h2>
-            <ul className={`${item.tech.length > 3 ? "grid grid-cols-2" : "grid grid-cols-1"}` }>
+          <div
+            key={index}
+            className="
+              p-6 rounded-2xl
+              border border-zinc-800
+              bg-zinc-900/50
+              backdrop-blur
+              hover:border-blue-500/50
+              hover:-translate-y-1
+              transition-all duration-300
+            "
+          >
+            <h3 className="text-xl font-bold mb-4">
+              {item.category}
+            </h3>
+
+            <div className="flex flex-wrap gap-2">
               {item.tech.map((tech, i) => (
-                <li key={i}>{tech}</li>
+                <span
+                  key={i}
+                  className="
+                    px-3 py-1
+                    rounded-full
+                    text-sm font-medium
+                    bg-blue-500/10
+                    border border-blue-500/20
+                    text-blue-300
+                    hover:bg-blue-500/20
+                    transition-colors
+                  "
+                >
+                  {tech}
+                </span>
               ))}
-            </ul>
+            </div>
           </div>
         ))}
       </div>
-    </>
+    </section>
   );
 }

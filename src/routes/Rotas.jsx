@@ -4,6 +4,7 @@ import {
 
 import Home from '../pages/Home'
 import Projetos from '../pages/Projetos'
+import IndividualPro from '../pages/IndividualPro'
 import Contato from '../pages/Contato'
 
 export const router = createBrowserRouter([
@@ -14,6 +15,10 @@ export const router = createBrowserRouter([
     {
         path: '/projetos',
         element: <Projetos />
+    },
+    {
+        path: '/individualpro/:id',
+        element: <IndividualPro/>
     },
     {
         path: '/contato',
