@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import Voltar from "../components/Voltar";
 import projetos from "../data/projetos";
 
 export default function IndividualPro() {
@@ -19,6 +20,7 @@ export default function IndividualPro() {
   return (
     <section className="min-h-screen bg-zinc-950 text-white py-16">
       <div className="max-w-6xl mx-auto px-6 space-y-10">
+        <Voltar lugar={'/projetos'} />
 
         <img
           src={projeto.img}

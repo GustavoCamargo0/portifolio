@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { stacks } from "../data/Stacks";
 
 export default function CardProjeto({ projeto }) {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ export default function CardProjeto({ projeto }) {
       <div className="overflow-hidden">
         <img
           src={projeto.img}
-          alt={projeto.nome}
+          alt={projeto.nome}  
           className="
             w-full
             h-56
@@ -52,26 +53,29 @@ export default function CardProjeto({ projeto }) {
         </h2>
 
         <p className="text-zinc-600 line-clamp-3">
-          {projeto.descricao}
+          {projeto.descrição}
         </p>
 
         <div className="flex flex-wrap gap-2">
-          {projeto.techs.map((tech, i) => (
-            <span
-              key={i}
-              className="
-                px-3
-                py-1
-                rounded-full
-                text-sm
-                font-medium
-                bg-blue-100
-                text-blue-700
-              "
-            >
-              {tech}
-            </span>
-          ))}
+          {projeto.techs.map((tech, i) => {
+            const Icon = stacks[tech]?.icon;
+
+            return (
+              <span
+                key={i}
+                className={`
+                  flex items-center gap-2
+                  px-3 py-1
+                  rounded-full
+                  text-sm font-medium border
+                  ${stacks[tech]?.color}
+                `}
+              >
+                {Icon && <Icon size={16} />}
+                {tech}
+              </span>
+            );
+          })}
         </div>
 
         <div className="pt-2 border-t border-zinc-100">

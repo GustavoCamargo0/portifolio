@@ -9,9 +9,6 @@ function Home() {
     <section className="min-h-[90vh] flex items-center bg-zinc-950 text-white p-2">
       <div className="max-w-5xl mx-auto px-6">
         <div className="space-y-6">
-          <span className="inline-block px-4 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
-            Desenvolvedor Back-end
-          </span>
 
           <h1 className="text-5xl md:text-7xl font-black tracking-tight">
             Olá, eu sou{" "}
@@ -19,6 +16,10 @@ function Home() {
               Gustavo Camargo
             </span>
           </h1>
+
+          <span className="inline-block px-4 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+            Desenvolvedor Back-end
+          </span>
 
           <p className="text-xl text-zinc-400 max-w-2xl">
             Transformando ideias em aplicações eficientes, escaláveis e bem
@@ -41,14 +42,14 @@ function Home() {
           </div>
 
           <div className="flex flex-wrap gap-4 pt-4">
-         
-          <button onClick={() => navigate('/projetos') }  className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition-all duration-300 font-semibold">
-            Ver projetos
-          </button>
 
-           <button onClick={() => navigate('/contato')}    className="px-6 py-3 rounded-xl border border-zinc-700 hover:border-blue-500 hover:text-blue-400 transition-all duration-300">
-            Contato
-           </button>
+            <button onClick={() => navigate('/projetos')} className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition-all duration-300 font-semibold">
+              Ver projetos
+            </button>
+
+            <button onClick={() => navigate('/contato')} className="px-6 py-3 rounded-xl border border-zinc-700 hover:border-blue-500 hover:text-blue-400 transition-all duration-300">
+              Contato
+            </button>
           </div>
 
           <div className="pt-10">
@@ -59,7 +60,7 @@ function Home() {
             <div className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/50 backdrop-blur">
               <TechStak />
             </div>
-            
+
           </div>
         </div>
       </div>

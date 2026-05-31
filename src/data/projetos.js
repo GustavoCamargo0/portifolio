@@ -22,7 +22,7 @@ const projetos = [
     nome: "App Ticket Cantina",
     descrição: "Aplicação para gerenciamento de tickets e pedidos em cantina escolar.",
     img: "/images/cantina.png",
-    techs: ["React Native", "JavaScript", "Supabase"],
+    techs: ["ReactNative", "JavaScript", "Supabase"],
     github: "https://github.com/GustavoCamargo0/AppTicketCatina",
     descDetalhada:
       "Aplicação desenvolvida para auxiliar no gerenciamento de pedidos e tickets de uma cantina escolar. O sistema permite registrar solicitações, acompanhar o andamento dos pedidos e organizar o fluxo de atendimento de forma prática e intuitiva.",
