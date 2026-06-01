@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-function Voltar({ lugar }) {
+export default function Voltar({ lugar }) {
 
     const navigate = useNavigate();
     return (
@@ -35,4 +35,3 @@ function Voltar({ lugar }) {
     )
 }
 
-export default Voltar;

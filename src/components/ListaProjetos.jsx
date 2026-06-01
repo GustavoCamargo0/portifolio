@@ -1,15 +1,14 @@
 import CardProjeto from "./CardProjeto";
 import projetos from "../data/projetos";
-import Voltar from "./Voltar";
+import Navbar from "./NavBar";
 
 export default function ListaProjetos() {
   return (
     <section
       id="projetos"
-      className="bg-zinc-950 text-white py-6"
-    >
-      <div className="max-w-7xl mx-auto px-6 space-y-6">
-        <Voltar lugar={'/'} />
+      className="bg-zinc-950 text-white py-2">
+      <div className="max-w-6xl mx-auto px-6 space-y-6">
+             <Navbar/>
         <div className="mb-12">
           <span className="text-blue-400 font-semibold tracking-wider">
             PORTFÓLIO

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Voltar from "../components/Voltar";
 import emailjs from "@emailjs/browser";
+import Navbar from "../components/NavBar";
 
 function Contato() {
 
@@ -31,18 +32,18 @@ function Contato() {
       .catch((error) => {
         console.error(error);
       });
-  }
+  } 
   return (
-    <section className="min-h-screen bg-zinc-950 text-white py-20 px-6">
-      <div className="max-w-4xl mx-auto">
-        <Voltar lugar={'/'} />
+    <section className="min-h-screen bg-zinc-950 text-white py-2">
+      <div className="max-w-6xl mx-auto space-y-6 px-6">
+           <Navbar/>
         <div className="mb-12 text-center">
           <h1
             className="
               text-5xl
               md:text-6xl
               font-black
-              bg-gradient-to-r
+              bg-linear-to-r
               from-blue-400
               to-cyan-400
               bg-clip-text

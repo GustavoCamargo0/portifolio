@@ -1,13 +1,17 @@
 import TechStak from "../components/TechStak";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 function Home() {
 
   const navigate = useNavigate()
 
   return (
+    <>
     <section className="min-h-[90vh] flex items-center bg-zinc-950 text-white p-2">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
+           <Navbar/>
         <div className="space-y-6">
 
           <h1 className="text-5xl md:text-7xl font-black tracking-tight">
@@ -65,6 +69,8 @@ function Home() {
         </div>
       </div>
     </section>
+    <Footer/>
+  </>
   );
 }
 

@@ -22,11 +22,15 @@ export default function TechStak() {
     },
     {
       category: "Ferramentas",
-      tech: ["Git", "Postman"]
+      tech: ["Git", "Postman", "Figma", "VS Code"]
     },
     {
       category: "Testes",
       tech: ["Cypress", "Selenium"]
+    },
+     {
+      category: "DevOps",
+      tech: ["Vercel", "Netfily"]
     }
   ];
 
