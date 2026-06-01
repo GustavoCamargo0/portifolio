@@ -1,6 +1,6 @@
 import CardProjeto from "./CardProjeto";
 import projetos from "../data/projetos";
-import Navbar from "./NavBar";
+import Navbar from "./Navbar";
 
 export default function ListaProjetos() {
   return (

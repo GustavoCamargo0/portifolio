@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Voltar from "../components/Voltar";
 import emailjs from "@emailjs/browser";
-import Navbar from "../components/NavBar";
+import Navbar from "../components/Navbar";
 
 function Contato() {
 
