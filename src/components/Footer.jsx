@@ -17,7 +17,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/gustavo-camargo-2a617a386/"
             target="_blank"
             className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 transition"
           >
@@ -25,7 +25,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="mailto:seuemail@email.com"
+            href="mailto:gustavo.fscamargo08@gmail.com"
             className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 transition"
           >
             <MdEmail size={20} />

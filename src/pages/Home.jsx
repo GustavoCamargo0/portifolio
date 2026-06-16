@@ -15,7 +15,7 @@ function Home() {
         <div className="space-y-6">
 
           <h1 className="text-5xl md:text-7xl font-black tracking-tight">
-            Olá, eu sou{" "}
+        {" "}
             <span className="bg-linear-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
               Gustavo Camargo
             </span>
